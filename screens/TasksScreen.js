@@ -17,7 +17,7 @@ export default function TasksScreen() {
             const tasks = taskData.map(([key, value]) => JSON.parse(value));
             setAllTasks(tasks);
         } catch (e) {
-            console.log(`Error fetching tasks: ${e}`);
+            Alert.alert('Error', 'Error in fetching tasks');
         }
     };
 
@@ -34,7 +34,7 @@ export default function TasksScreen() {
             setAllTasks(updatedTasks);
             Alert.alert('Task Deleted', `Task ${taskName} deleted successfully`);
         } catch (e) {
-            console.log(`Error removing task: ${e}`);
+            Alert.alert('Error', 'Error in removing tasks');
         }
     };
 

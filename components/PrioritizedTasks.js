@@ -37,7 +37,7 @@ export default function PrioritizedTasks() {
             setPrioritizedTasks(updatedPriorities);
             Alert.alert('Task Deleted', `Task ${taskName} deleted successfully`);
         } catch (e) {
-            console.log(`Error ${e}`);
+            Alert.alert('Error', 'Error in deleteing the task');
         };
     };
 

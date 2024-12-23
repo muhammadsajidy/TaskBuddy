@@ -71,9 +71,7 @@ export default function AddTask() {
             setTimeSelected(false);
             setPriority(false);
             Alert.alert('Success', 'Task added successfully!');
-            console.log('Stored tasks:', taskData);
         } catch (e) {
-            console.log(`Error: ${e}`);
             Alert.alert('Error', 'Failed to save the task. Please try again.');
         }
     }
